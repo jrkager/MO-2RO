@@ -1,0 +1,24 @@
+# Python environment for the multi-objective 2RO code.
+#
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#   python example.py
+#
+# Python 3.11 or newer is required (the code uses PEP 604/585 syntax such as
+# `set[Hashable]` and `tuple[float, float]`).
+#
+# The versions below are the ones the experiments reported in the paper were run
+# with (Python 3.13.9 on Linux). Loosen them if your platform needs to; nothing
+# in the code depends on a specific minor version.
+#
+# GUROBI LICENCE
+# ==============
+# Every model is solved with Gurobi. The `gurobipy` wheel ships a size-limited
+# evaluation licence that suffices for `example.py` but NOT for the instance
+# sizes in the paper; those need a full licence, e.g. the free academic one:
+# https://www.gurobi.com/academia/academic-program-and-licenses/
+
+gurobipy==13.0.0
+numpy==2.3.4
+scipy==1.17.0
+matplotlib==3.10.7

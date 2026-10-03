@@ -1,0 +1,14 @@
+# Experiment output written by reproduce_paper_experiments.py.
+# Measured results are deliberately not part of this archive.
+results/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+gurobi.log
+
+# IDE
+.idea/
+.vscode/
