@@ -137,7 +137,7 @@ columns (`num_iterations`, `num_refinements`, `worst_case_hv`,
 paper are computed from exactly these fields.
 
 **Instance generation is fully deterministic.** `problems/generator.py` derives
-three independent PCG64 streams from the instance seed, so an instance depends
+independent PCG64 streams from the instance seed, so an instance depends
 only on `(number of weight entries, |S|, seed)` — no platform, solver or
 library version enters. Both application problems use that one generator.
 
