@@ -22,7 +22,7 @@ The scheme (see the paper for the write-up):
   scenario. The two stages are therefore correlated, while the noise still lets
   them disagree on individual entries.
 
-Random streams. Three independent PCG64 streams are derived from the instance
+Random streams. Independent PCG64 streams are derived from the instance
 seed: ``[seed, 0]`` for the first-stage weights (drawn entry by entry, row-major
 over the four columns), ``[seed, 1]`` for the multipliers (drawn scenario by
 scenario), and ``[seed, 2, s]`` for the perturbations of scenario ``s`` (again
